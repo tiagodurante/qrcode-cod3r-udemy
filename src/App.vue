@@ -1,9 +1,16 @@
 <template>
-  <div class="app">Hello World</div>
+  <div id="app">
+    <Main />
+  </div>
 </template>
 
 <script>
-export default {};
+import Main from "./main/Index";
+export default {
+  components: {
+    Main
+  }
+};
 </script>
 
 <style>
@@ -16,6 +23,15 @@ export default {};
 }
 body {
   margin: 0;
+}
+.input {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.output {
+  border: 1px solid #222;
+  padding: 30px 15px;
+  background-color: #0006;
 }
 #app {
   display: flex;
